@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+	<title>Dragon Slayer</title>
+	<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header-flex">
+		<div>
+			<figure class="header-figure">
+                <img src="images/knight2.png" alt="Chevalier">
+                <div class="barre-pv-red">
+                	<div id="barrePvChevalier"></div>
+                </div>
+            	<figcaption id="pvHero" class="blue">Max pv</figcaption>
+            </figure>	
+		</div>
+		<div>
+			<a href="index.html"><h1>Dragon Slayer</h1></a>
+		</div>
+		<div>
+			<figure class="header-figure">
+                <img src="images/dragon2.png" alt="Dragon">
+                <div class="barre-pv-red">
+                	<div id="barrePvDragon"></div>
+                </div>
+               	<figcaption id="pvMonstre" class="blue">Max pv</figcaption>
+            </figure>
+		</div>   
+    </header>
+
+    <main id="container">
+
+	    <section id="menuIntro" class="menu-intro">
+	    	<div class="navButton button-hover">
+	    		<h2>Présentation du code (Dev)</h2>
+	    	</div>
+	    	<div class="hide navToggle">
+	    		<p>Ce modeste programme a pour but de faire un petit tour du javascript (vanilla) de manière ludique. Cela me permet de présenter mes compétences en programmation orientée objet, intéraction avec le DOM, animations, variables, conditions, boucles etc. Le code source est disponnible sur github !</p>
+	    	</div>
+	    	<div class="navButton button-hover">
+	    		<h2>Règles du jeu</h2>
+	    	</div>
+	    	<div class="hide navToggle">
+	    		<p>
+	    			Le jeu est simple. Vous incarnez un chevalier qui doit terrasser un terrifiant dragon.
+		    	</p>
+		    	<p>
+		    		On choisit d'abord ses paramètres (difficulté, arme et armure) qui influenceront vos chances de gagner.
+		    	</p>
+		    	<p>
+		    		A chaque tour le gagnant du "pierre-feuille-ciseaux" attaque et cause des dégats à son adversaire.
+		    	</p>
+		    	<p>
+		    		La partie s'achève lorsque l'un des combattant n'a plus de point de vie
+		    	</p>
+		    	
+	    	</div>
+	    	<div class="navButton button-hover">
+	    		<h2>Jouer !</h2>
+	    	</div>
+	    	<div class="hide navToggle">
+	    		<form id="form">
+
+	    			<fieldset>
+		    			<legend>Choisir un nom</legend>
+		    			<input type="text" name="nom">
+	    			</fieldset>
+
+	    			<fieldset>
+		    			<legend>Choisir un niveau de difficulté</legend>
+		    			<div class="flex-radio">
+		    				<div>
+			    				<input type="radio" name="difficulte" value="facile" checked="checked"><label for="difficulté">Facile</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="difficulte" value="moyen"><label for="difficulté">Moyen</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="difficulte" value="difficile"><label for="difficulté">Difficile</label>
+			    			</div>
+		    			</div>
+	    			</fieldset>
+
+					<fieldset>
+		    			<legend>Choisir une épée</legend>
+		    			<div class="flex-radio">
+		    				<div>
+			    				<input type="radio" name="epee" value="bois" checked="checked"><label for="epee">Epée en bois</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="epee" value="acier"><label for="epee">Epée en acier</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="epee" value="excalibur"><label for="epee">Excalibur</label>
+			    			</div>
+			    		</div>
+	    			</fieldset>
+
+					<fieldset>
+	    			<legend>Choisir une armure</legend>
+	    				<div class="flex-radio">
+	    					<div>
+			    				<input type="radio" name="armure" value="cuivre" checked="checked"><label for="armure">Armure en cuivre</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="armure" value="fer"><label for="armure">Armure en fer</label>
+			    			</div>
+			    			<div>
+			    				<input type="radio" name="armure" value="magique"><label for="armure">Armure magique</label>
+			    			</div>
+			    		</div>
+	    			</fieldset>
+
+	    			<input type="submit" value="GO" />
+
+	    		</form>
+	    	</div>
+	    </section>
+
+	</main>    
+
+	<script type="text/javascript" src="library/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/animations.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

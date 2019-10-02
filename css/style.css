@@ -1,0 +1,195 @@
+/*BASE*/
+img {max-width: 100%}
+* {box-sizing: border-box;}
+.clear {clear: both;}
+.hide {display:none;}
+
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+	color: #FF4136;
+}
+
+.green {
+	color: #01FF70;
+}
+.blue {
+	color : #7FDBFF;
+}
+
+body {
+	font-size: 1em;
+	color: #ffffff;
+	font-family: 'Germania One', cursive;
+	font-weight: lighter;
+	background-color: #111111;
+	text-shadow: 2px 2px 0 #111111;
+}
+
+/*HEADER*/
+h1 {
+	font-size: 1.8em;
+	color: #FF4136;
+}
+
+.header-flex {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	padding:20px 0;
+	margin-bottom: 20px;
+}
+.header-flex > div {
+	width: calc(100% / 3);
+	padding: 10px;
+}
+.header-figure {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+figcaption {
+	margin-top: 15px;
+}
+.header-figure img {
+	width: 90px;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 10px;
+}
+.barre-pv-red {
+	height: 10px;
+	width: 90px;
+	background-color: #FF4136;
+	display: inline-block;
+}
+#barrePvDragon {
+	height: 10px;
+	width: 90px;
+	background-color: #01FF70;
+}
+#barrePvChevalier {
+	height: 10px;
+	width: 90px;
+	background-color: #01FF70;	
+}
+
+/*MAIN*/
+.menu-intro, .game-display {
+	max-width: 300px;
+	margin:10px auto;
+	text-align: center;
+}
+.game-display {
+	border-bottom: 5px solid #ffffff;
+}
+.menu-intro > div:nth-child(odd) {
+	border: 5px solid #ffffff;
+	margin-top: 10px;
+}
+.menu-intro > div:nth-child(even) {
+	border: 2px solid #ffffff;
+	padding: 10px;
+}
+.button-hover:hover {
+	background-color: grey;
+}
+form > *{
+	margin: 15px 0;
+}
+.flex-radio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+input[type="radio"]{
+		margin-right: 10px;
+}
+.button-combat {
+	color: #ffffff;
+	margin: 50px;
+	border: 5px solid #ffffff;
+	padding: 10px;
+}
+h3 {
+	margin-bottom: 15px;
+}
+.chifoumi-board {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 15px;
+}
+.chifoumi-board img {
+	width: 50px;
+}
+.chifoumi-resultat-img {
+	width: 50px;
+}
+.active {
+	border : 5px solid #01FF70;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px){
+	.header-figure img {
+		width: 150px;
+	}
+	.barre-pv-red {
+		height: 15px;
+	}
+	#barrePvDragon {
+		height: 15px;
+	}
+	#barrePvChevalier {
+		height: 15px;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	.menu-intro, .game-display {
+		max-width: 650px;
+		margin: 40px auto;
+	}
+	.menu-intro > div:nth-child(odd) {
+		margin-top: 20px;
+	}
+	input[type="text"]{
+		width: 300px;
+	}
+	fieldset {
+		padding: 15px;
+	}
+	
+	.flex-radio {
+	justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.menu-intro, .game-display {
+		max-width: 800px;
+		margin: 40px auto;
+	}
+}
